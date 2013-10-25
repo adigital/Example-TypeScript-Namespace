@@ -1,0 +1,1 @@
+tsc -out main.js Main.ts
