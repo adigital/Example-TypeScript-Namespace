@@ -8,6 +8,7 @@ module namespace2 {
         private _component:CommonComponent;
 
         constructor() {
+            this._component = new CommonComponent();
         }
     }
 }
