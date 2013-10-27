@@ -1,8 +1,8 @@
 ///<reference path='CommonComponent.ts'/>
 
-import CommonComponent = anothernamespace.CommonComponent;
-
 module namespace1 {
+    import CommonComponent = anothernamespace.CommonComponent;
+
     export class ClassOne {
 
         private _component:CommonComponent;

@@ -1,14 +1,10 @@
 TypeScript-Namespace-Issue
 ==========================
 
-Import Class Into Multiple Classes Causes Duplicate identifier
-
-If you compile the code you get "Duplicate identifier 'CommonComponent'."
-
 You can type the tsc command:
 
 ```
-tsc -out main.js Main.ts
+tsc -out _compiled/main.js Main.ts
 ```
 
 

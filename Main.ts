@@ -1,10 +1,10 @@
 ///<reference path='ClassOne.ts'/>
 ///<reference path='ClassTwo.ts'/>
 
-import ClassOne = namespace1.ClassOne;
-import ClassTwo = namespace2.ClassTwo;
-
 module mainnamespace {
+    import ClassOne = namespace1.ClassOne;
+    import ClassTwo = namespace1.ClassTwo;
+
     export class Main {
 
         private _classOne:ClassOne;
