@@ -1,1 +1,1 @@
-tsc -out _compiled/main.js Main.ts
+tsc -out scripts/_compiled/main.js scripts/Main.ts

@@ -1,13 +1,15 @@
 ///<reference path='CommonComponent.ts'/>
 
-module namespace1 {
-    import CommonComponent = anothernamespace.CommonComponent;
-
-    export class ClassOne {
-
+module anotherNamespace
+{
+    export class ClassOne
+    {
         private _component:CommonComponent;
 
-        constructor() {
+        constructor()
+        {
+            console.log("ClassOne");
+
             this._component = new CommonComponent();
         }
     }

@@ -4,27 +4,28 @@ TypeScript-Namespace-Issue
 You can type the tsc command:
 
 ```
-tsc -out _compiled/main.js Main.ts
+tsc -out scripts/_compiled/main.js scripts/Main.ts
 ```
 
 
 Main.ts
 
 ```
-///<reference path='ClassOne.ts'/>
-///<reference path='ClassTwo.ts'/>
+///<reference path='anotherNamespace/ClassOne.ts'/>
+///<reference path='anotherNamespace/ClassTwo.ts'/>
 
-import ClassOne = namespace1.ClassOne;
-import ClassTwo = namespace2.ClassTwo;
+module namespace
+{
+    import ClassOne = anotherNamespace.ClassOne;
+    import ClassTwo = anotherNamespace.ClassTwo;
 
-module mainnamespace {
-    export class Main {
-
+    export class Main
+    {
         private _classOne:ClassOne;
         private _classTwo:ClassTwo;
 
-        constructor() {
-
+        constructor()
+        {
             this._classOne = new ClassOne();
             this._classTwo = new ClassTwo();
         }
@@ -33,19 +34,19 @@ module mainnamespace {
 ```
 
 
-ClassOne.js
+ClassOne.ts
 
 ```
 ///<reference path='CommonComponent.ts'/>
 
-import CommonComponent = anothernamespace.CommonComponent;
-
-module namespace1 {
-    export class ClassOne {
-
+module anotherNamespace
+{
+    export class ClassOne
+    {
         private _component:CommonComponent;
 
-        constructor() {
+        constructor()
+        {
             this._component = new CommonComponent();
         }
     }
@@ -57,14 +58,14 @@ ClassTwo.ts
 ```
 ///<reference path='CommonComponent.ts'/>
 
-import CommonComponent = anothernamespace.CommonComponent;
-
-module namespace2 {
-    export class ClassTwo {
-
+module anotherNamespace
+{
+    export class ClassTwo
+    {
         private _component:CommonComponent;
 
-        constructor() {
+        constructor()
+        {
             this._component = new CommonComponent();
         }
     }
@@ -74,10 +75,12 @@ module namespace2 {
 CommonComponent.ts
 
 ```
-module anothernamespace {
-    export class CommonComponent {
-
-        constructor() {
+module anotherNamespace
+{
+    export class CommonComponent
+    {
+        constructor()
+        {
         }
     }
 }

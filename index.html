@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="scripts/_compiled/main.js"></script>
+    <script type="text/javascript">
+        window.onload = function(event) {
+            //Get class from namespace.
+            var Main = namespace.Main;
+            var app = new Main();
+
+            console.log("namespace object:", app);
+            console.log("namespace object found on the window object:", window.namespace);
+        }
+    </script>
+</head>
+<body>
+    <p>Open your console log and view the output.</p>
+</body>
+</html>
