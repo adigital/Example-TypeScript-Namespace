@@ -6,11 +6,13 @@
     <script type="text/javascript">
         window.onload = function(event) {
             //Get class from namespace.
-            var Main = namespace.Main;
+            var Main = MyNamespace.Main;
+
             var app = new Main();
 
-            console.log("namespace object:", app);
-            console.log("namespace object found on the window object:", window.namespace);
+            console.log(app);
+            console.log("MyNamespace objects found on the window object:", window.MyNamespace);
+            console.log("AnotherNamespace objects found on the window object:", window.AnotherNamespace);
         }
     </script>
 </head>

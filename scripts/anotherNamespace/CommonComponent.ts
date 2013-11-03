@@ -1,4 +1,4 @@
-module anotherNamespace
+module AnotherNamespace
 {
     export class CommonComponent
     {

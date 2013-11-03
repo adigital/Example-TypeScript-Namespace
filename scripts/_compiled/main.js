@@ -1,45 +1,45 @@
-var anotherNamespace;
-(function (anotherNamespace) {
+var AnotherNamespace;
+(function (AnotherNamespace) {
     var CommonComponent = (function () {
         function CommonComponent() {
             console.log("CommonComponent");
         }
         return CommonComponent;
     })();
-    anotherNamespace.CommonComponent = CommonComponent;
-})(anotherNamespace || (anotherNamespace = {}));
+    AnotherNamespace.CommonComponent = CommonComponent;
+})(AnotherNamespace || (AnotherNamespace = {}));
 ///<reference path='CommonComponent.ts'/>
-var anotherNamespace;
-(function (anotherNamespace) {
+var AnotherNamespace;
+(function (AnotherNamespace) {
     var ClassOne = (function () {
         function ClassOne() {
             console.log("ClassOne");
 
-            this._component = new anotherNamespace.CommonComponent();
+            this._component = new AnotherNamespace.CommonComponent();
         }
         return ClassOne;
     })();
-    anotherNamespace.ClassOne = ClassOne;
-})(anotherNamespace || (anotherNamespace = {}));
+    AnotherNamespace.ClassOne = ClassOne;
+})(AnotherNamespace || (AnotherNamespace = {}));
 ///<reference path='CommonComponent.ts'/>
-var anotherNamespace;
-(function (anotherNamespace) {
+var AnotherNamespace;
+(function (AnotherNamespace) {
     var ClassTwo = (function () {
         function ClassTwo() {
             console.log("ClassTwo");
 
-            this._component = new anotherNamespace.CommonComponent();
+            this._component = new AnotherNamespace.CommonComponent();
         }
         return ClassTwo;
     })();
-    anotherNamespace.ClassTwo = ClassTwo;
-})(anotherNamespace || (anotherNamespace = {}));
-///<reference path='anotherNamespace/ClassOne.ts'/>
-///<reference path='anotherNamespace/ClassTwo.ts'/>
-var namespace;
-(function (namespace) {
-    var ClassOne = anotherNamespace.ClassOne;
-    var ClassTwo = anotherNamespace.ClassTwo;
+    AnotherNamespace.ClassTwo = ClassTwo;
+})(AnotherNamespace || (AnotherNamespace = {}));
+///<reference path='AnotherNamespace/ClassOne.ts'/>
+///<reference path='AnotherNamespace/ClassTwo.ts'/>
+var MyNamespace;
+(function (MyNamespace) {
+    var ClassOne = AnotherNamespace.ClassOne;
+    var ClassTwo = AnotherNamespace.ClassTwo;
 
     var Main = (function () {
         function Main() {
@@ -50,5 +50,5 @@ var namespace;
         }
         return Main;
     })();
-    namespace.Main = Main;
-})(namespace || (namespace = {}));
+    MyNamespace.Main = Main;
+})(MyNamespace || (MyNamespace = {}));

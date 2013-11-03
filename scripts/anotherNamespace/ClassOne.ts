@@ -1,6 +1,6 @@
 ///<reference path='CommonComponent.ts'/>
 
-module anotherNamespace
+module AnotherNamespace
 {
     export class ClassOne
     {

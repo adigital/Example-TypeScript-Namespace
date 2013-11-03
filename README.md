@@ -11,13 +11,13 @@ tsc -out _compiled/main.js Main.ts
 Main.ts
 
 ```
-///<reference path='anotherNamespace/ClassOne.ts'/>
-///<reference path='anotherNamespace/ClassTwo.ts'/>
+///<reference path='AnotherNamespace/ClassOne.ts'/>
+///<reference path='AnotherNamespace/ClassTwo.ts'/>
 
-module namespace
+module MyNamespace
 {
-    import ClassOne = anotherNamespace.ClassOne;
-    import ClassTwo = anotherNamespace.ClassTwo;
+    import ClassOne = AnotherNamespace.ClassOne;
+    import ClassTwo = AnotherNamespace.ClassTwo;
 
     export class Main
     {
@@ -39,7 +39,7 @@ ClassOne.ts
 ```
 ///<reference path='CommonComponent.ts'/>
 
-module anotherNamespace
+module AnotherNamespace
 {
     export class ClassOne
     {
@@ -58,7 +58,7 @@ ClassTwo.ts
 ```
 ///<reference path='CommonComponent.ts'/>
 
-module anotherNamespace
+module AnotherNamespace
 {
     export class ClassTwo
     {
@@ -75,7 +75,7 @@ module anotherNamespace
 CommonComponent.ts
 
 ```
-module anotherNamespace
+module AnotherNamespace
 {
     export class CommonComponent
     {

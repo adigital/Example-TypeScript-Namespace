@@ -1,10 +1,10 @@
-///<reference path='anotherNamespace/ClassOne.ts'/>
-///<reference path='anotherNamespace/ClassTwo.ts'/>
+///<reference path='AnotherNamespace/ClassOne.ts'/>
+///<reference path='AnotherNamespace/ClassTwo.ts'/>
 
-module namespace
+module MyNamespace
 {
-    import ClassOne = anotherNamespace.ClassOne;
-    import ClassTwo = anotherNamespace.ClassTwo;
+    import ClassOne = AnotherNamespace.ClassOne;
+    import ClassTwo = AnotherNamespace.ClassTwo;
 
     export class Main
     {
