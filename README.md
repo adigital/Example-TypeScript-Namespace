@@ -4,7 +4,7 @@ TypeScript-Namespace-Issue
 You can type the tsc command:
 
 ```
-tsc -out scripts/_compiled/main.js scripts/Main.ts
+tsc -out _compiled/main.js Main.ts
 ```
 
 

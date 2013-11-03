@@ -1,1 +1,0 @@
-tsc -out scripts/_compiled/main.js scripts/Main.ts
