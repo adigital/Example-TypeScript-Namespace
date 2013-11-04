@@ -1,4 +1,4 @@
-TypeScript-Namespace-Issue
+TypeScript-Namespace-Namespace
 ==========================
 
 You can type the tsc command:
