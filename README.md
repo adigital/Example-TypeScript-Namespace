@@ -1,4 +1,4 @@
-TypeScript-Namespace-Namespace
+TypeScript Namespace Example
 ==========================
 
 You can type the tsc command:
