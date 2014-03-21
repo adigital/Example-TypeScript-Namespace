@@ -1,6 +1,8 @@
 TypeScript Namespace Example
 ==========================
 
+Be sure to check out all my [TypeScript tutorials and examples](http://www.codebelt.com/category/typescript/).
+
 You can type the tsc command:
 
 ```
